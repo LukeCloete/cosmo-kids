@@ -9,6 +9,7 @@ import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Gallery2 from "@/components/Gallery2";
 
 export default function HomePage() {
   return (
@@ -30,7 +31,7 @@ export default function HomePage() {
       {/* Benefits Section */}
       <ServicesSection />
 
-      <Gallery />
+      <Gallery2 />
 
       {/* Testimonials Section */}
       <Testimonials />
