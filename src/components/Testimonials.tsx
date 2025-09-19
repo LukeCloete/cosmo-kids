@@ -1,10 +1,10 @@
 import { Star } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
-import Parent1 from "../app/public/parent1.jpg";
-import Parent2 from "../app/public/parent2.webp";
-import Parent3 from "../app/public/parent3.jpg";
+import Parent1 from "../../public/parent1.jpg";
+import Parent2 from "../../public/parent2.webp";
+import Parent3 from "../../public/parent3.jpg";
 import Image from "next/image";
-import BACKGROUND_IMAGE from "../app/public/sky-background.png";
+import BACKGROUND_IMAGE from "../../public/sky-background.png";
 
 export default function Testimonials() {
   return (

@@ -57,7 +57,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        bouncyBunny: "url('src/app/public/bouncy-bunny.webp')",
+        bouncyBunny: "url('public/Bouncy_bunny-removebg-preview.webp')",
       },
     },
   },

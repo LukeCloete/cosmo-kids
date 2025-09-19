@@ -2,14 +2,14 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Paintbrush,
-  ClockIcon,
   Book,
   Music,
   UtensilsCrossedIcon,
   BikeIcon,
+  Cog,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import Children2 from "../app/public/children2.png";
+import Children2 from "../../public/children2.png";
 
 const services = [
   {
@@ -20,10 +20,10 @@ const services = [
     position: "left",
   },
   {
-    icon: ClockIcon,
-    title: "Full Day Session",
+    icon: Cog,
+    title: "Gross Motor activities",
     description:
-      "There are carefully planned fun and educational activities each day. Carefully worked out timetables filled with fun learning.",
+      "A variety of physical activities to help children develop their gross motor skills and have fun.",
     position: "left",
   },
   {
@@ -70,7 +70,7 @@ export default function ServicesSection() {
       {/* Main Content */}
       <div className="container mx-auto max-w-7xl z-10 bg-transparent flex flex-col gap-16">
         <div className="text-center flex gap-4 flex-col items-center ">
-          <p className="text-orange-400 text-xl">Our Services</p>
+          <p className="text-orange-400 text-xl">Our Activities</p>
           <h2 className="text-3xl font-bold md:text-4xl">
             We Give The Best For Your Children
           </h2>

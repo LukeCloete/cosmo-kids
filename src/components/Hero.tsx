@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
-import SECTION_IMAGE from "../app/public/FlyGraphic1.png";
+import SECTION_IMAGE from "../../public/FlyGraphic1.png";
 
 export default function Hero() {
   return (
@@ -10,8 +10,8 @@ export default function Hero() {
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-20 h-20 bg-purple-300 rounded-full opacity-60"></div>
         <div className="absolute top-20 right-20 w-16 h-16 bg-pink-300 rounded-full opacity-60"></div>
-        <div className="absolute bottom-20 left-20 w-16 h-16 bg-[url('../app/public/bouncy-bunny.webp')] opacity-50 bg-cover bg-center bg-no-repeat"></div>
-        <div className="absolute top-[calc(20%)] right-[calc(55%)] w-40 h-40 opacity-50 bg-[url('../app/public/smart-lions.webp')] bg-cover bg-center bg-no-repeat"></div>
+        <div className="absolute bottom-20 left-20 w-16 h-16 bg-[url('/bouncy-bunny.webp')] opacity-50 bg-cover bg-center bg-no-repeat"></div>
+        <div className="absolute top-[calc(20%)] right-[calc(55%)] w-40 h-40 opacity-50 bg-[url('/smart-lions.webp')] bg-cover bg-center bg-no-repeat"></div>
       </div>
 
       {/* Clouds */}
