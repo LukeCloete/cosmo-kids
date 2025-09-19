@@ -3,7 +3,7 @@ import { Textarea } from "./ui/textarea";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import Image from "next/image";
-import SECTION_IMAGE from "../app/public/children3.png";
+import SECTION_IMAGE from "../../public/children3.png";
 
 export default function Contact() {
   return (
@@ -12,7 +12,7 @@ export default function Contact() {
         <div className="absolute top-10 left-10 w-20 h-20 bg-green-300 rounded-full opacity-60"></div>
         <div className="absolute top-20 right-20 w-16 h-16 bg-red-300 rounded-full opacity-60"></div>
 
-        <div className="absolute bottom-[calc(5%)] right-[calc(5%)] w-40 h-40 opacity-50 bg-[url('../app/public/smart-lions.webp')] bg-cover bg-center bg-no-repeat"></div>
+        <div className="absolute bottom-[calc(5%)] right-[calc(5%)] w-40 h-40 opacity-50 bg-[url('/smart-lions.webp')] bg-cover bg-center bg-no-repeat"></div>
       </div>
       <div className="absolute top-0 right-0 w-32 h-32 bg-blue-200 rounded-full opacity-30 -translate-y-16 translate-x-16"></div>
 

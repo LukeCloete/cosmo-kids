@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Badge } from "./ui/badge";
 
 interface GalleryImage {
-  src: string;
+  url: string;
   alt: string;
   title?: string;
 }
@@ -50,6 +50,7 @@ export function GalleryOverlay({
 
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen]);
 
   const goToNext = () => {
@@ -101,15 +102,15 @@ export function GalleryOverlay({
       {/* Main image */}
       <div className="max-w-7xl relative max-h-[90vh] mx-4">
         <Image
-          src={currentImage.src || "/placeholder.svg"}
+          src={currentImage.url || "/placeholder.svg"}
           alt={currentImage.alt}
           className="max-w-full max-h-full object-contain"
           width={1920}
           height={1080}
         />
         {currentImage.title && (
-          <div className="text-center top-2 absolute mt-4">
-            <h3 className="text-white text-xl font-semibold">
+          <div className="text-center top-2 left-4 absolute mt-4">
+            <h3 className="text-white bg-black/80 p-2 rounded-md text-xl font-semibold">
               {currentImage.title}
             </h3>
           </div>
@@ -137,7 +138,7 @@ export function GalleryOverlay({
               }`}
             >
               <Image
-                src={image.src || "/placeholder.svg"}
+                src={image.url || "/placeholder.svg"}
                 alt={image.alt}
                 width={64}
                 height={64}

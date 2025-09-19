@@ -1,7 +1,7 @@
 import { Card, CardContent } from "./ui/card";
-import Blog1 from "../app/public/news1.jpg";
-import Blog2 from "../app/public/news2.jpg";
-import Blog3 from "../app/public/news3.jpg";
+import Blog1 from "../../public/news1.jpg";
+import Blog2 from "../../public/news2.jpg";
+import Blog3 from "../../public/news3.jpg";
 import Image from "next/image";
 import { Button } from "./ui/button";
 

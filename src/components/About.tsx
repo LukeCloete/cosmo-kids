@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
-import SECTION_IMAGE from "../app/public/children-cosmo2.png";
+import SECTION_IMAGE from "/public/children-cosmo2.png";
 
 export default function About() {
   return (
